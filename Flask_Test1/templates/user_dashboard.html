@@ -1,0 +1,26 @@
+<!-- user_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard User</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>User Dashboard</h2>
+        <p>Chào mừng, {{ current_user.username }}</p>
+
+        <h3>Thông tin cá nhân</h3>
+        <ul>
+            <li><a href="{{ url_for('edit_profile') }}">Chỉnh sửa thông tin cá nhân</a></li>
+            <li><a href="{{ url_for('change_password') }}">Thay đổi mật khẩu</a></li>
+        </ul>
+
+        <p><a href="{{ url_for('logout') }}">Đăng xuất</a></p>
+    </div>
+
+</body>
+</html>

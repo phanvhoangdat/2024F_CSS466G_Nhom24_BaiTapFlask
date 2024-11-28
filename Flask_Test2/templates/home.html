@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+    <title>{% block title %}{% endblock %}Homepage</title>
+    {% endblock %}
+</head>
+<body>
+    
+        
+    <div class="topnav">
+        <a href="{{ url_for('return_homepage') }}">Home</a>
+        
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        
+        <a href="{{ url_for('edit') }}">Manage</a>
+        
+        <a href="{{ url_for('logout') }}">Log out</a>
+           
+    </div>
+    {% block content %}
+    <div class="mainpage"> 
+        <div class="Message">{{ msg }}</div>
+        <h1>Tran Phuoc Vinh</h1>
+        <p>Studen's ID: 28211350709</p>
+        <p>class: CMU-TPM3</p>
+        <p></p>
+    </div>
+    {% endblock %}
+
+
+    
+</body>
+</html>

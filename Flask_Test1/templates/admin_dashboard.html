@@ -1,0 +1,26 @@
+<!-- admin_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+        <p>Chào mừng, {{ current_user.username }}</p>
+
+        <h3>Quản lý người dùng</h3>
+        <ul>
+            <li><a href="{{ url_for('view_users') }}">Xem tất cả người dùng</a></li>
+            <li><a href="{{ url_for('create_user') }}">Thêm người dùng mới</a></li>
+        </ul>
+
+        <p><a href="{{ url_for('logout') }}">Đăng xuất</a></p>
+    </div>
+
+</body>
+</html>

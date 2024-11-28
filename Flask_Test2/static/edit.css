@@ -1,0 +1,80 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    height: 50px;
+  }
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: grey;
+    color: black;
+}
+
+.edit-page {
+    margin-top: 50px;
+    margin-left: 200px;
+    color: black;
+}
+.search-container {
+    align-self: center;
+    float: none;
+    padding: auto;
+}
+.search-container input{
+    background: rgb(168, 164, 164);
+    height: 40px;
+    width: 500px;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-family:"Lato", sans-serif ;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    font-size: 17px;
+    float: left;
+    border: none;
+    height: 40px;
+    width: 80px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+}
+
+.search-container input:hover {
+    color: grey;
+}
+.edit-form {
+    margin-top: 50px;
+}
+.edit-form form {
+    margin-top: 100px;
+}
+.edit-form form button {
+    color: white;
+    font-size: large;
+    height: 40px;
+    width: 100px;
+    border: none;
+    background-color: black;
+
+}
+.edit-form form input{
+    padding: 10px;
+    width: 300px;
+    background-color: rgb(227, 222, 222);
+    font-family: "Lato", sans-serif;
+    border: none;
+}
+body {
+    margin: 0;
+}
